@@ -1,0 +1,140 @@
+body{
+    background: rgb(9,20,22);
+    background: linear-gradient(90deg, #091416 0%, rgba(3,14,28,1) 58%, rgba(3,13,28,1) 66%, rgba(42,8,60,1) 77%, rgba(130,12,97,1) 87%, rgba(255,0,172,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+
+.navbar{
+	background-color: transparent;
+
+	&
+
+	
+	.navbar-brand{
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+	text-shadow:
+		0 0 5px rgb(234, 0, 255),
+		0 0 10px rgb(255, 0, 221),
+		0 0 20px rgb(255, 0, 234),
+		0 0 40px rgb(127, 38, 115),
+		0 0 80px rgb(127, 38, 115),
+		0 0 90px rgb(127, 38, 123),
+		0 0 100px rgb(127, 38, 112),
+		0 0 140px rgb(127, 38, 108),
+		0 0 180px rgb(127, 38, 123);
+	}
+
+	&
+
+	.navbar-brand__h1{
+    font-size: 100px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+	}
+
+	&
+
+	.nav-item{
+    margin: 1rem;
+	}
+
+	&
+
+	.nav-item__p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+	text-shadow:
+		0 0 5px rgb(234, 0, 255),
+		0 0 10px rgb(255, 0, 221),
+		0 0 20px rgb(255, 0, 234),
+		0 0 40px rgb(127, 38, 115),
+		0 0 80px rgb(127, 38, 115),
+		0 0 90px rgb(127, 38, 123),
+		0 0 100px rgb(127, 38, 112),
+		0 0 140px rgb(127, 38, 108),
+		0 0 180px rgb(127, 38, 123);
+	}
+
+	&
+
+	.navbar-nav{
+		margin-top: 2rem;
+	}
+}
+
+
+.botonesnavbar__menu{
+	.desplazable__info{
+		background: transparent;
+		width: 50%;
+		margin-left: 2rem;
+	}
+
+		&
+
+	.InfoNav{
+		margin-top: 0;
+		color: rgb(255, 255, 255);
+		text-shadow:
+			0 0 5px rgb(234, 0, 255),
+			0 0 10px rgb(255, 0, 221),
+			0 0 20px rgb(255, 0, 234),
+			0 0 40px rgb(127, 38, 115),
+			0 0 80px rgb(127, 38, 115),
+			0 0 90px rgb(127, 38, 123),
+			0 0 100px rgb(127, 38, 112),
+			0 0 140px rgb(127, 38, 108),
+			0 0 180px rgb(127, 38, 123);
+	}
+	
+}
+
+
+.card-columns{
+
+	background-color: transparent;
+	
+
+	&
+
+	.card{
+		background-color: transparent;
+		
+
+		&
+
+		.cardBodyTitle{
+			color: white;
+		}
+
+		&
+
+		.cardBody{
+			background-color: transparent;
+		}
+
+		&
+
+		.cardBodyText{
+			background-color: transparent;
+		}
+	}
+}
+
+footer{
+
+    .col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &
+    .FooterTitle{
+        color: white;
+
+    }
+
+ 
+}

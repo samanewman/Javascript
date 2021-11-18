@@ -1,0 +1,38 @@
+#SeccionFormulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h1{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#FormContacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: left; 
+    margin: 2rem;
+    align-self: flex-end;
+}
+
+.BloquesForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.InputLineaTexto{
+ justify-content: right;   
+}
+
+.InfoDeContacto{
+    align-self: flex-start;
+}
+
+#LogoWhatsapp{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+

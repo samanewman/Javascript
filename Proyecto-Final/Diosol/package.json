@@ -1,0 +1,11 @@
+{
+  "name": "curso-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compilesass": "sass --watch scss:css"
+  },
+  "author": "samantha newman",
+  "license": "ISC"
+}

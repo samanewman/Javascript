@@ -1,0 +1,26 @@
+@import "globals.scss";
+@import "Home.scss";
+
+
+
+@each $fondo in Luz1, Luz2, Luz3 {
+    .#{$fondo}-icon {
+        background-image: url("../Fotos/#{$fondo}.png");
+        width: 574px;
+        height: 576px;
+        margin: 1rem;
+        
+        -moz-box-shadow: 0px 0px 30px #01df01; 
+        -webkit-box-shadow: 0px 0px 30px #00ff15; 
+        box-shadow: 0px 0px 30px #01df13;
+        
+        padding: 10px;
+        border: 1px solid #00ff22;
+    }
+
+}
+
+.Contenedor-Fondo{
+    display: flex;
+    flex-direction: row;
+}
