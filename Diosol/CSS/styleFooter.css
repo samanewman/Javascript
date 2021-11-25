@@ -1,0 +1,36 @@
+footer {
+    background: #050020;
+    color: #fff;
+    padding-top: 10px;
+  }
+  
+  footer a {
+    color: rgb(255, 255, 255);
+  }
+  
+  footer a:hover {
+    color: rgb(144, 144, 177);
+  }
+  
+  footer h3 {
+   color: #4f7281;
+    letter-spacing: 1px;
+    margin: 30px 0 20px;
+  }
+  
+   footer .copyright {
+    padding: 15px 0;
+    background: rgb(9, 1, 24);
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  
+  footer .copyright span {
+    color: #94999b;
+  }
+
+  .media img{
+    width:4rem;
+    height: 4rem;
+    margin:1rem;
+  }

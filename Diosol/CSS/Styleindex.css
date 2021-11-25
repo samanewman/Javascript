@@ -1,0 +1,8 @@
+*{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.carousel-caption{
+    margin-bottom: 15rem;
+    -webkit-text-stroke: 1px black;
+}

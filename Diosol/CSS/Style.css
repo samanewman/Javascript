@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main__intro {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.main__intro__title {
+  color: #0c1d77;
+  font-size: 4rem;
+}
+
+
+.main__paragraph{
+  color: red;
+  margin: 10rem;
+}
+
+.main__paragraph__title{
+  font-size:larger;
+}
+
+.header__image{
+display:flex
+}
+
+.header__image__image{
+  width: 30%;
+  height: 10%;
+  margin: 1rem;
+  justify-content: center;
+  align-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

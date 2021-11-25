@@ -1,0 +1,50 @@
+*{ 
+    background-color: $ColorVerde;
+}
+
+.navbar{
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    &
+    .navbar-brand, .TextoLuminoso{
+        color: white;
+        text-align: center;
+        text-shadow:
+		0 0 5px rgb(21, 255, 0),
+		0 0 10px rgb(30, 255, 0),
+		0 0 20px rgb(0, 255, 0),
+		0 0 40px rgb(38, 127, 45),
+		0 0 80px rgb(38, 127, 60),
+		0 0 90px rgb(45, 127, 38),
+		0 0 100px rgb(38, 127, 50),
+		0 0 140px rgb(38, 127, 57),
+		0 0 180px rgb(38, 127, 53);
+    }
+
+    &
+    .navbar-brand__p{
+        font-size: 100px;
+        margin-right: 1vh;
+        margin-left: 1vh;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    &
+    .navbar-brand__span{
+        margin: 0;
+        font-size: 4vh;
+        font-family: 'Tourney', cursive;
+    }
+    &
+    .nav-link{
+        color: white;
+    }
+
+    &
+    .navbar-toggler{
+        background-color: yellowgreen;
+    }
+    
+}
