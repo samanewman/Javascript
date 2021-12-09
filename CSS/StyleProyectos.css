@@ -23,3 +23,14 @@ main .container .row{
 .titulos{
     margin-top: 2rem;
 }
+
+.CajaTexto{
+    width: 50px;
+}
+
+.CajasCotizacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+}

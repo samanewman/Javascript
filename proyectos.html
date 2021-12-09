@@ -16,8 +16,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<script src="ConversorDivisas.js" defer></script>
-  
+  <script src="ConversorDivisas.js" defer></script>
+  <script src="Proyectos-CotizacionClimatizacionPiletas.js" defer></script>
   
 </head>
 
@@ -92,8 +92,33 @@
         <div class="card-body">
           <h5 class="card-title">Climatización de piscinas</h5>
           <p class="card-text">Sistema de climatización.</p>
-          <p>Cotizar precio según tamaño de pileta</p>
-          <a href="Proyectos-CotizacionClimatizacionPiletas.html" class="btn btn-info">Cotizar</a>
+          <p>Cotizar precio según tamaño de pileta:</p>
+          <div class = "CajasCotizacion">
+            <div>
+            <label>Largo:</label>
+            <input type="text" id="largopileta" name="Largo" class="CajaTexto">
+          </div>
+          <div>
+            <label>Ancho:</label>
+            <input type="text" id="anchopileta" name="Ancho" class="CajaTexto">
+          </div>
+          </div>
+          <div class = "CajasCotizacion">
+            <div>
+              <label>Profundidad<br> Mín:</label>
+              <input type="text" id="Minpileta" name="Minimo" class="CajaTexto">
+            </div>
+            <div>
+              <label>Profundidad <br>Máx:</label>
+              <input type="text" id="Maxpileta" name="Maximo" class="CajaTexto">
+            </div>
+          </div>
+          <div id="resultadocotizacion">
+
+          </div>
+
+          </div>
+          <button class="btn btn-info" id="cotizarpiscina">Cotizar</button>
           <a href="https://wa.me/5491158666939/?text=¡Hola Diosol! Quiero solicitar el serviciod e climatización de piscinas" class="btn btn-primary">Solicitar</a>
         </div>
       </div>
