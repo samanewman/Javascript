@@ -8,10 +8,6 @@ function cotizarclimatizacion(){
     let ProfundidadMinima = document.getElementById("Minpileta").value;
     let ProfundidadMaxima= document.getElementById("Maxpileta").value;
 
-    console.log(LargoPileta);
-    console.log(AnchoPileta);
-    console.log(ProfundidadMinima);
-    console.log(ProfundidadMaxima);
 
     let Profundidad = (parseInt(ProfundidadMinima) + parseInt(ProfundidadMaxima))/2;
 
