@@ -34,3 +34,17 @@ main .container .row{
     justify-content: space-between;
     padding: 0.5rem;
 }
+
+#contenedorbomba, #contenedorkit, #contenedorpanel{
+    display: none;
+}
+
+#contenedorcarrito{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+#cantidadproductoscarrito{
+    color: white;
+}
