@@ -22,21 +22,28 @@ $("#contenedorpanel").append(`Precio en Pesos: $ ${PrecioenBluePanel}`);
 
 
 $("#calcularpreciobomba").click(function(){
+        $("#contenedorbomba").toggle(2000)
+                            .css("color", "blue")
+                            .delay(2000);
+
     
-    $("#contenedorbomba").toggle(1000);
 
 })
 
 $("#calcularpreciokit").click(function(){
     
-    $("#contenedorkit").toggle(1000);
+    $("#contenedorkit").toggle(1000)
+                        .css("color", "blue")
+                        .delay(2000);
 
 })
 
 
 $("#calcularpreciopanel").click(function(){
     
-    $("#contenedorpanel").toggle(1000);
+    $("#contenedorpanel").toggle(1000)
+                        .css("color", "blue")
+                        .delay(2000);
 
 })
 
