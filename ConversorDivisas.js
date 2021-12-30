@@ -49,3 +49,25 @@ $("#calcularpreciopanel").click(function(){
 
 
 
+/*--------Cotización Dólar - API BCRA --------------*/
+
+let urlDolar = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
+
+$("#boxAPIDolar").hide();
+
+
+
+$("#BotonAPIDolar").click(function(){
+
+    $("#boxBotonAPIDolar").hide();
+    $("#boxAPIDolar").show();
+
+    $.get(urlDolar, function(datos){
+        /*
+        $("#boxAPIDolar").append(`Dólar Blue<br>Compra:${compra}<br>Venta:${venta}`);  */
+    })
+
+    
+    
+})
+

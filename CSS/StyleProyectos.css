@@ -48,3 +48,18 @@ main .container .row{
 #cantidadproductoscarrito{
     color: white;
 }
+
+#boxcarroyboton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#BoxbotonyAPIDolar{
+    margin: 2rem;
+}
+
+#boxAPIDolar{
+    color: white;
+}
