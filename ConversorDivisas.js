@@ -63,8 +63,11 @@ $("#BotonAPIDolar").click(function(){
     $("#boxAPIDolar").show();
 
     $.get(urlDolar, function(datos){
-        /*
-        $("#boxAPIDolar").append(`Dólar Blue<br>Compra:${compra}<br>Venta:${venta}`);  */
+        
+        let compra = datos[1].casa.compra;
+        let venta = datos[1].casa.venta;
+
+        $("#boxAPIDolar").append(`Dólar Blue<br>Compra:${compra}<br>Venta:${venta}`);
     })
 
     
