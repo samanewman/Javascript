@@ -16,10 +16,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <script src="ConversorDivisas.js" defer></script>
-  <script src="Proyectos-CotizacionClimatizacionPiletas.js" defer></script>
-  <script src="CarritoDeCompras.js" defer></script>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+  <script src="CarritoDeCompras.js" defer></script>
 </head>
 
 <body>
@@ -53,7 +52,7 @@
         </div>
         <div id = "contenedorcarrito">
           <div id = "logocarrito">
-            <a href="CarritoDeCompras.html"><img src="logos/CARRITO.png"></img></a>
+            <img src="logos/CARRITO.png"></img>
           </div>
           <div id = "cantidadproductoscarrito">
           </div>
@@ -63,102 +62,7 @@
 
   <main>
 
-    <div class="text-center">
-      <h1 class="titulos">Nuestros productos</h1>
-    </div>
 
-
-    <div class="card-deck">
-      <div class="card">
-        <img class="card-img-top" src="Fotos/Proyectos-BombadeAgua.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Bombas de Agua</h5>
-          <p class="card-text">Bombas de agua con energía fotovoltáica.</p>
-          <div id = "contenedorbombausd"></div>
-          <div id = "contenedorbomba"></div>
-          <div>
-            <label>Cantidad</label>
-            <input type="number" id="cantidadbomba" name="Cantidad" class="CajaTexto">
-          </div>
-          <button class="btn btn-info" id = "calcularpreciobomba">Calcular ARS</button>
-          <button class="btn btn-primary" id = "SolicitarBomba" >Solicitar</button>
-       </div>
-       </div>
-      <div class="card">
-        <img class="card-img-top" src="Fotos/Proyectos-KitBaterias.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Kit de Baterías</h5>
-          <p class="card-text">Baterías para sistemas fotovoltáicos.</p>
-          <div id = "contenedorkitusd"></div>
-          <div id = "contenedorkit"></div>
-          <div>
-            <label>Cantidad:</label>
-            <input type="number" id="cantidadkit" name="Cantidad" class="CajaTexto">
-          </div>
-          <button class="btn btn-info" id = "calcularpreciokit">Calcular ARS</button>
-          <button id = "SolicitarKit" class="btn btn-primary">Solicitar</button>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="Fotos/Proyectos-PanelSolar.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Panel Solar</h5>
-          <p class="card-text">Panel solar individual.</p>
-          <div id = "contenedorpanelusd"></div>
-          <div id = "contenedorpanel"></div>
-          <div>
-            <label>Cantidad:</label>
-            <input type="number" id="cantidadpaneles" name="Cantidad" class="CajaTexto">
-          </div>
-          <button class="btn btn-info" id = "calcularpreciopanel">Calcular ARS</button>
-          <button id = "SolicitarPanel"class="btn btn-primary">Solicitar</button>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="Fotos/Proyectos-ClimatizacionPiscina.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Climatización de piscinas</h5>
-          <p class="card-text">Sistema de climatización.</p>
-          <p>Cotizar precio según tamaño de pileta:</p>
-          <div class = "CajasCotizacion">
-            <div>
-            <label>Largo:</label>
-            <input type="text" id="largopileta" name="Largo" class="CajaTexto">
-          </div>
-          <div>
-            <label>Ancho:</label>
-            <input type="text" id="anchopileta" name="Ancho" class="CajaTexto">
-          </div>
-          </div>
-          <div class = "CajasCotizacion">
-            <div>
-              <label>Profundidad<br> Mín:</label>
-              <input type="text" id="Minpileta" name="Minimo" class="CajaTexto">
-            </div>
-            <div>
-              <label>Profundidad <br>Máx:</label>
-              <input type="text" id="Maxpileta" name="Maximo" class="CajaTexto">
-            </div>
-          </div>
-          <div id="resultadocotizacion">
-
-          </div>
-
-          </div>
-          <button class="btn btn-info" id="cotizarpiscina">Cotizar</button>
-          <button id = "SolicitarPiscina" class="btn btn-primary">Solicitar</button>
-        </div>
-      </div>
-    </div>
-    <div class="text-center mt-2">
-      <h1 class="titulos">otros Servicios</h1>
-    </div>
-    <div class="container">
-      <div class="row">
-        <a href="DIOLUCES/DiolucesbyDiosol-index.html"><img src="Fotos/DioLuces.jpg" /></a>
-        <a href="DIONEONLED/DioNeonledbyDiosol-index.html"><img src="Fotos/DioNeon.jpg" /></a>
-      </div>
-    </div>
 
   </main>
 

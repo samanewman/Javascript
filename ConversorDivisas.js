@@ -4,7 +4,7 @@ const PrecioProductosusd = {bomba: 510, kitbateria: 340, panelsolar: 260};
 const CotizacionDolar = {blue: 200, oficial: 106, Bolsa: 184, liqui: 184, solidario: 174};
 
 
-$("#contenedorbombausd").append(`Precio en USD: $ ${PrecioProductosusd.bomba}`);
+$("#contenedorbombausd").append(`Precio en USD: $<div id = "PrecioBombaUSD"> ${PrecioProductosusd.bomba}</div>`);
 
 $("#contenedorkitusd").append(`Precio en USD: $ ${PrecioProductosusd.kitbateria}`);
 
@@ -12,7 +12,7 @@ $("#contenedorpanelusd").append(`Precio en USD: $ ${PrecioProductosusd.panelsola
 
 
 PrecioenBlueBomba = PrecioProductosusd.bomba*CotizacionDolar.blue
-$("#contenedorbomba").append(`Precio en Pesos: $ ${PrecioenBlueBomba}`);
+$("#contenedorbomba").append(`Precio en Pesos: $<div id = "PrecioBombaAR">${PrecioenBlueBomba}</div>`);
 
 PrecioenBlueKit = PrecioProductosusd.kitbateria*CotizacionDolar.blue
 $("#contenedorkit").append(`Precio en Pesos: $ ${PrecioenBlueKit}`);
