@@ -11,18 +11,21 @@
   <title>Diosol energías renovables</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
   <link rel="stylesheet" href="CSS/styleFooter.css" />
   <link rel="stylesheet" href="CSS/StyleProyectos.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
   <script src="ConversorDivisas.js" defer></script>
   <script src="Proyectos-CotizacionClimatizacionPiletas.js" defer></script>
   <script src="CarritoDeCompras.js" defer></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+
 </head>
 
 <body>
+ 
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #050020 !important">
       <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -53,7 +56,7 @@
         </div>
         <div id = "contenedorcarrito">
           <div id = "logocarrito">
-            <a href="CarritoDeCompras.html"><img src="logos/CARRITO.png"></img></a>
+            <a href="#ModalCarrito" role="button" data-toggle="modal"><img src="logos/CARRITO.png"></img></a>
           </div>
           <div id = "cantidadproductoscarrito">
           </div>
@@ -62,8 +65,7 @@
   </header>
 
   <main>
-
-    <div class="text-center">
+      <div class="text-center">
       <h1 class="titulos">Nuestros productos</h1>
     </div>
 
@@ -78,10 +80,10 @@
           <div id = "contenedorbomba"></div>
           <div>
             <label>Cantidad</label>
-            <input type="number" id="cantidadbomba" name="Cantidad" class="CajaTexto">
+            <input type="number" id="cantidadbomba" class="CajaTexto" value = 1>
           </div>
           <button class="btn btn-info" id = "calcularpreciobomba">Calcular ARS</button>
-          <button class="btn btn-primary" id = "SolicitarBomba" >Solicitar</button>
+          <button class="btn btn-primary" id = "SolicitarBomba" href="#ModalCarrito" role="button" data-toggle="modal">Solicitar</button>
        </div>
        </div>
       <div class="card">
@@ -93,10 +95,10 @@
           <div id = "contenedorkit"></div>
           <div>
             <label>Cantidad:</label>
-            <input type="number" id="cantidadkit" name="Cantidad" class="CajaTexto">
+            <input type="number" id="cantidadkit" name="Cantidad" class="CajaTexto" value = 1> 
           </div>
           <button class="btn btn-info" id = "calcularpreciokit">Calcular ARS</button>
-          <button id = "SolicitarKit" class="btn btn-primary">Solicitar</button>
+          <button id = "SolicitarKit" class="btn btn-primary" href="#ModalCarrito" role="button" data-toggle="modal">Solicitar</button>
         </div>
       </div>
       <div class="card">
@@ -108,10 +110,10 @@
           <div id = "contenedorpanel"></div>
           <div>
             <label>Cantidad:</label>
-            <input type="number" id="cantidadpaneles" name="Cantidad" class="CajaTexto">
+            <input type="number" id="cantidadpaneles" name="Cantidad" class="CajaTexto" value = 1>
           </div>
           <button class="btn btn-info" id = "calcularpreciopanel">Calcular ARS</button>
-          <button id = "SolicitarPanel"class="btn btn-primary">Solicitar</button>
+          <button id = "SolicitarPanel"class="btn btn-primary" href="#ModalCarrito" role="button" data-toggle="modal">Solicitar</button>
         </div>
       </div>
       <div class="card">
@@ -123,21 +125,21 @@
           <div class = "CajasCotizacion">
             <div>
             <label>Largo:</label>
-            <input type="text" id="largopileta" name="Largo" class="CajaTexto">
+            <input type="text" id="largopileta" name="Largo" class="CajaTexto" value = 1>
           </div>
           <div>
             <label>Ancho:</label>
-            <input type="text" id="anchopileta" name="Ancho" class="CajaTexto">
+            <input type="text" id="anchopileta" name="Ancho" class="CajaTexto" value = 1>
           </div>
           </div>
           <div class = "CajasCotizacion">
             <div>
               <label>Profundidad<br> Mín:</label>
-              <input type="text" id="Minpileta" name="Minimo" class="CajaTexto">
+              <input type="text" id="Minpileta" name="Minimo" class="CajaTexto" value = 1>
             </div>
             <div>
               <label>Profundidad <br>Máx:</label>
-              <input type="text" id="Maxpileta" name="Maximo" class="CajaTexto">
+              <input type="text" id="Maxpileta" name="Maximo" class="CajaTexto" value = 1>
             </div>
           </div>
           <div id="resultadocotizacion">
@@ -146,7 +148,7 @@
 
           </div>
           <button class="btn btn-info" id="cotizarpiscina">Cotizar</button>
-          <button id = "SolicitarPiscina" class="btn btn-primary">Solicitar</button>
+          <button id = "SolicitarPiscina" class="btn btn-primary" href="#ModalCarrito" role="button" data-toggle="modal">Solicitar</button>
         </div>
       </div>
     </div>
@@ -159,6 +161,41 @@
         <a href="DIONEONLED/DioNeonledbyDiosol-index.html"><img src="Fotos/DioNeon.jpg" /></a>
       </div>
     </div>
+
+    //Modal
+    <div id="ModalCarrito" class="modal fade">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Carrito de compras</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div>
+                  <div>
+                    <ul>
+                      <li>NOMBRE</li>
+                      <li>PRECIO UNITARIO</li>
+                      <li>SUBTOTAL</li>
+                      <li>CANTIDAD</li>
+                    </ul>
+                  </div>
+                </div>
+                <div id = "modal-body-bomba"></div>
+                <div id = "modal-body-kit"></div>
+                <div id = "modal-body-panel"></div>
+                <div id = "modal-body-piscina"></div>
+                <div id = "modal-body-pago"></div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-danger" id = "FinalizarCompra">Finalizar compra</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  //Termina modal
 
   </main>
 

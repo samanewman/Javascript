@@ -61,5 +61,24 @@ main .container .row{
 }
 
 #boxAPIDolar{
-    color: white;
+    color: white; 
+}
+
+.modal-body li{
+    list-style: none;
+    height: 20px;
+    width: 100px;
+
+}
+
+.modal-body ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.CajaTextoPago{
+    width: 200px;
 }

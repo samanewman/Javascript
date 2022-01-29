@@ -1,28 +1,34 @@
 let botoncotizar = document.getElementById("cotizarpiscina");
-botoncotizar.addEventListener("click", cotizarclimatizacion);
+botoncotizar.addEventListener("click", mostrarcotizacion);
 
 function cotizarclimatizacion(){
     
-    let LargoPileta = document.getElementById("largopileta").value;
-    let AnchoPileta = document.getElementById("anchopileta").value;
-    let ProfundidadMinima = document.getElementById("Minpileta").value;
-    let ProfundidadMaxima= document.getElementById("Maxpileta").value;
+    LargoPileta = document.getElementById("largopileta").value;
+    AnchoPileta = document.getElementById("anchopileta").value;
+    ProfundidadMinima = document.getElementById("Minpileta").value;
+    ProfundidadMaxima= document.getElementById("Maxpileta").value;
 
 
-    let Profundidad = (parseInt(ProfundidadMinima) + parseInt(ProfundidadMaxima))/2;
+    Profundidad = (parseInt(ProfundidadMinima) + parseInt(ProfundidadMaxima))/2;
 
-    let TamanioDePileta = [LargoPileta, AnchoPileta, Profundidad];
+    TamanioDePileta = [LargoPileta, AnchoPileta, Profundidad];
 
-    let MetrosCubicos = (parseInt(TamanioDePileta[0]) * parseInt(TamanioDePileta[1])* parseInt(TamanioDePileta[2]));
+    MetrosCubicos = (parseInt(TamanioDePileta[0]) * parseInt(TamanioDePileta[1])* parseInt(TamanioDePileta[2]));
 
-    let CantidadPaneles = MetrosCubicos * 2
-    let PrecioClimatizacion = (CantidadPaneles * 50) + 400
+    CantidadPaneles = MetrosCubicos * 2
+    PrecioClimatizacion = (CantidadPaneles * 50) + 400
+    arraycotizacion = {MetrosCubicos, CantidadPaneles, PrecioClimatizacion}
 
-    let resultadocotizacion = document.getElementById("resultadocotizacion");
-    resultadocotizacion.innerHTML = `Su pileta es de ${MetrosCubicos} metros cúbicos. Deberá utilizar ${CantidadPaneles} paneles para climatizar su pileta. El precio total es: ${PrecioClimatizacion} dólares</div>`;
-
+    return arraycotizacion;
 }
 
+
+function mostrarcotizacion(){
+    
+    cotizarclimatizacion();
+    let resultadocotizacion = document.getElementById("resultadocotizacion");
+    resultadocotizacion.innerHTML = `Su pileta es de ${arraycotizacion.MetrosCubicos} metros cúbicos. Deberá utilizar ${arraycotizacion.CantidadPaneles} paneles para climatizar su pileta. El precio total es: ${arraycotizacion.PrecioClimatizacion} dólares</div>`;
+}
 
 
 
